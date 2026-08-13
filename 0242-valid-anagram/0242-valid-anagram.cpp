@@ -10,10 +10,10 @@ public:
             freq[q]--;
         }
         for(auto x : freq){
-            if(x.second==0){
-                return true;
+            if(x.second!=0){
+                return false;
             }
-            else return false;
+            else return true;
         }
         return {};
     }
